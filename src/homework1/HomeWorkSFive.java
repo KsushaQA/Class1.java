@@ -34,10 +34,14 @@ public class HomeWorkSFive {
             }
             if (a7 == 7) {
                 System.out.println("Воскресенье");
-            } else if (a1 >= 7 ) ; {
+            } else if (a1 > 7 || a2 > 7 || a3 > 7 || a4 > 7 || a5 > 7 || a6 > 7 || a7 > 7) ;
+            {
                 System.out.println("Ошибка. Введенное число не соотвктвует диапазону");
             }
         }
     }
 }
+
+
+
 
