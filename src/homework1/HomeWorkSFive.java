@@ -7,40 +7,33 @@ public class HomeWorkSFive {
         Scanner input = new Scanner(System.in);
         System.out.println("Введите ваши значения переменных");
         int a1 = input.nextInt();
-        int a2 = input.nextInt();
-        int a3 = input.nextInt();
-        int a4 = input.nextInt();
-        int a5 = input.nextInt();
-        int a6 = input.nextInt();
-        int a7 = input.nextInt();
-        if (a1 <= 7) {
+
             if (a1 == 1) {
                 System.out.println("Понедельник");
             }
-            if (a2 == 2) {
+            else if (a1 == 2) {
                 System.out.println("Вторник");
             }
-            if (a3 == 3) {
+            else if (a1 == 3) {
                 System.out.println("Среда");
             }
-            if (a4 == 4) {
+            else if (a1 == 4) {
                 System.out.println("Четверг");
             }
-            if (a5 == 5) {
+            else if (a1 == 5) {
                 System.out.println("Пятница");
             }
-            if (a6 == 6) {
+            else if (a1 == 6) {
                 System.out.println("Суббота");
             }
-            if (a7 == 7) {
+            else if (a1 == 7) {
                 System.out.println("Воскресенье");
-            } else if (a1 > 7 || a2 > 7 || a3 > 7 || a4 > 7 || a5 > 7 || a6 > 7 || a7 > 7) ;
-            {
+            } else {
                 System.out.println("Ошибка. Введенное число не соотвктвует диапазону");
             }
         }
     }
-}
+
 
 
 
