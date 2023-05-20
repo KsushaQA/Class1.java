@@ -1,4 +1,7 @@
 package homework2;
+
+import java.util.Scanner;
+
 /*3)Написать проограмму, условно для склада приема металла. Представим, что склад
         может хранить определенный вес металла. Пользователь вводит с
         клавиатуры вес, который может хранится на складе. Дальше пользователь вводит
@@ -10,4 +13,16 @@ package homework2;
         о невозможности приемки такого малого веса. Программа завершается, когда
         место на складе закончилось.*/
 public class HW3 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите ваш вес");
+        int weight = in.nextInt();
+
+        while (weight <= 5) {
+            System.out.println("Не возможно принять такой маленький вес");
+            break;
+
+        }
+
+    }
 }
