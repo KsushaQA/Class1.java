@@ -15,9 +15,9 @@ public class HomeWorkSFour {
         int x = input.nextInt();
         int y = input.nextInt();
         if (x > y) {
-            System.out.println("Это правда");
+            System.out.println("Число 7 больше 5, и это true.");
         } else if (x < y) {
-            System.out.println("Это ложь");
+            System.out.println("Число 5 больше 7, и это false.");
         }
     }
 }
