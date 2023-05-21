@@ -15,14 +15,24 @@ import java.util.Scanner;
 public class HW3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Введите ваш вес");
+        System.out.println("Максимальный вес, к-рый хранится на складе");
         int weight = in.nextInt();
+        System.out.println("Минимальный вес, к-рый хранится на складе");
+        int minweight = in.nextInt();
+            while (weight > minweight) {
+                if (minweight < 5) {
+                    System.out.println("Не возможно принять такой маленький вес. Введите вес не меньше 5");
+                    break;
+                }
+                System.out.println("Какой вес Вы хотите сдать?");
+                System.out.println("Осталось места на:" + (weight - minweight));
+                break;
+            }
+        System.out.println("Какой вес Вы хотите сдать?");
+            int dopweight = in.nextInt();
+            if ((dopweight+minweight) > weight) {
+                System.out.println(" Такое большой вес не влезет");
 
-        while (weight <= 5) {
-            System.out.println("Не возможно принять такой маленький вес");
-            break;
-
+            }
         }
-
     }
-}
