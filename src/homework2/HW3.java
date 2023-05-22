@@ -16,23 +16,29 @@ public class HW3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Максимальный вес, к-рый хранится на складе");
-        int weight = in.nextInt();
+        int maxWeight = in.nextInt();
         System.out.println("Минимальный вес, к-рый хранится на складе");
-        int minweight = in.nextInt();
-            while (weight > minweight) {
-                if (minweight < 5) {
-                    System.out.println("Не возможно принять такой маленький вес. Введите вес не меньше 5");
-                    break;
-                }
-                System.out.println("Какой вес Вы хотите сдать?");
-                System.out.println("Осталось места на:" + (weight - minweight));
-                break;
-            }
-        System.out.println("Какой вес Вы хотите сдать?");
-            int dopweight = in.nextInt();
-            if ((dopweight+minweight) > weight) {
-                System.out.println(" Такое большой вес не влезет");
+        int minWeight = in.nextInt();
+        while (maxWeight > 0) {
+            System.out.println("Введите вес, который вы хотите сдать на склад: ");
+            int weight = in.nextInt();
 
+            if (weight < 5) {
+                System.out.println("Невозможно принять металл весом менее 5 кг");
+            } else if (weight > maxWeight) {
+                System.out.println("Невозможно принять металл. Превышен остаток на складе.");
+            } else if (maxWeight - weight == 0) {
+                System.out.println("Склад заполнен. Программа завершена.");
+                break;
+            } else if (maxWeight - weight < 5) {
+                System.out.println("Невозможно принять металл. Недопустимый остаток на складе.");
+            } else {
+                maxWeight -= weight;
+                System.out.println("Принят металл весом: " + weight);
+                System.out.println("Осталось места на складе: " + (maxWeight));
             }
         }
     }
+}
+
+
