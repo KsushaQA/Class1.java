@@ -10,15 +10,14 @@ import java.util.Scanner;
 //       Вывод: Число 5 болшье 7, и это false.
 public class HomeWorkSFour {
     public static void main(String[] args) {
+        System.out.println("Введите число x");
+        String text = "Число %1$d больше %2$d, и это %3$b";
         Scanner input = new Scanner(System.in);
-        System.out.println("Введите ваши значения переменных");
         int x = input.nextInt();
+        System.out.println("Введите число Y");
         int y = input.nextInt();
-        if (x > y) {
-            System.out.println("Число 7 больше 5, и это true.");
-        } else if (x < y) {
-            System.out.println("Число 5 больше 7, и это false.");
-        }
+        boolean k = x > y;
+        System.out.printf(text, x, y, k);
     }
 }
 
