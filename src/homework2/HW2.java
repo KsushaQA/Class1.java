@@ -8,24 +8,17 @@ import java.util.Scanner;
 public class HW2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите ваше число");
-        int num = scanner.nextInt();
-        if (isPalindrome(num)) {
-            System.out.println("Число является палиндромом");
+        System.out.println("Insert number:");
+        String number = scanner.nextLine();
+        String result = "";
+        for (int i = number.length() - 1; i >= 0; i--) {
+            result = result + number.charAt(i);
+        }
+        if (result.equals(number)) {
+            System.out.println("This is palindrom");
         } else {
-            System.out.println("Число не является палиндромом");
+            System.out.println("This is not palindrom");
         }
     }
-
-    public static boolean isPalindrome(int num) {
-        int reversedNum = 0;
-        int originalNum = num;
-        while (num !=0) {
-            reversedNum = reversedNum *10 + num%10;
-            num/=10;
-        }
-        return originalNum == reversedNum;
-    }
-
-    }
+}
 
