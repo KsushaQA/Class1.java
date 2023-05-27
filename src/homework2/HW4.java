@@ -26,6 +26,7 @@ int[] time = {10, 12, 14, 16, 18, 20};
         int index1;
 while (true) {
     System.out.println("Insert index of first array");
+    System.out.println("Between 0 and "+ (names.length-1));
     int index = input.nextInt();
     if (index >= 0 && index < names.length) {
         index1 = index;
@@ -35,6 +36,7 @@ while (true) {
         int index2;
         while (true){
             System.out.println("Insert index of second array");
+            System.out.println("Between 0 and "+ (place.length-1));
             int index = input.nextInt();
             if(index >=0&&index< place.length) {
                 index2 = index;
@@ -44,6 +46,7 @@ while (true) {
         int index3;
         while (true){
             System.out.println("Insert index of third array");
+            System.out.println("Between 0 and "+ (time.length-1));
             int index = input.nextInt();
             if(index >=0&&index< time.length) {
                 index3 = index;
