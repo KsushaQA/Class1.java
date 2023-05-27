@@ -1,4 +1,7 @@
 package homework2;
+
+import java.util.Scanner;
+
 /*4)Создать три массива.
         Первый будет состоять из следующих имен:
         "Петя", "Маша", "Алёна", "Федя", "Саша", "Антон", "Глеб".
@@ -19,7 +22,35 @@ public class HW4 {
 String[] names = {"Петя", "Маша", "Алёна", "Федя", "Саша", "Антон", "Глеб"};
 String[] place = {"школу", "магазин", "церковь", "тренажерный зал", "кино", "поликлинику"};
 int[] time = {10, 12, 14, 16, 18, 20};
+        Scanner input = new Scanner(System.in);
+        int index1;
+while (true) {
+    System.out.println("Insert index of first array");
+    int index = input.nextInt();
+    if (index >= 0 && index < names.length) {
+        index1 = index;
+        break;
+    }
+}
+        int index2;
+        while (true){
+            System.out.println("Insert index of second array");
+            int index = input.nextInt();
+            if(index >=0&&index< place.length) {
+                index2 = index;
+                break;
+}
+    }
+        int index3;
+        while (true){
+            System.out.println("Insert index of third array");
+            int index = input.nextInt();
+            if(index >=0&&index< time.length) {
+                index3 = index;
+                break;
+            }
+        }
+        System.out.println(names[index1]+ " будет идти в "+ place[index2]+ " в "+ time[index3]+ ":00");
 
     }
-
 }
