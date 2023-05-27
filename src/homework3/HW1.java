@@ -51,14 +51,12 @@ public class HW1 {
             do {
                 System.out.print("Введите Ваше число");
                 guess = in.nextInt();
-
                 if (guess < secretNum) {
                     System.out.println("Your number is too small. Please, try again..");
                 } else if (guess > secretNum) {
                     System.out.println("Your number is too big. Please, try again..");
                 }
             } while (guess != secretNum);
-
             System.out.println("Congratulations," + name + "!" + " Это число " + secretNum);
             break;
         }
