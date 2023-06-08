@@ -9,5 +9,31 @@ public class HW1 {
         numbers.printEvenNumbers();
         numbers.printOddNumbers();
     }
+
+    public static class Numbers {
+        private int[] array;
+
+        public Numbers(int[] array) {
+            this.array = array;
+        }
+
+        public void printEvenNumbers() {
+            System.out.println("Even Numbers:");
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] % 2 == 0) {
+                    System.out.println(array[i] + " ");
+                }
+            }
+        }
+
+        public void printOddNumbers() {
+            System.out.println("Odd Numbers:");
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] % 2 != 0) {
+                    System.out.println(array[i] + " ");
+                }
+            }
+        }
+    }
 }
 
