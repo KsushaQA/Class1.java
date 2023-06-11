@@ -10,7 +10,7 @@ public class Converter {
     public Converter(String name) {
         this.name = name;
     }
-    public String getName() {
+    public String getName(){
         return name;
     }
     public int convertToInt(byte b){
@@ -56,7 +56,7 @@ public class Converter {
     public int convertToDouble(char c){
         return c;
     }
-    public int cconvertToDouble(float f){
+    public int convertToDouble(float f){
         return (int) f;
     }
     public int convertToDouble(double d){
@@ -69,31 +69,31 @@ public class Converter {
         System.out.println("введен тип boolean");
         return 0;
     }
-    public int converToString(byte b){
+    public int convertToString(byte b){
         return b;
     }
-    public int converToString(short s){
+    public int convertToString(short s){
         return s;
     }
-    public int converToString(int i){
+    public int convertToString(int i){
         return i;
     }
-    public int converToString(long l){
+    public int convertToString(long l){
         return (int) l;
     }
-    public int converToString(char c){
+    public int convertToString(char c){
         return c;
     }
-    public int converToString(boolean b){
+    public int convertToString(boolean b){
         return 0;
     }
-    public int converToString(float f){
+    public int convertToString(float f){
         return (int) f;
     }
-    public int converToString(double d){
+    public int convertToString(double d){
         return (int) d;
     }
-    public int converToString(String s){
+    public int convertToString(String s){
         return Integer.parseInt(s);
     }
 }
