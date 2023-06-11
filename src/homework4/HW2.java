@@ -28,10 +28,10 @@ public class HW2 {
         int sum = 0;
         for (int i = 0; i < array2.length; i++) {
             sum += array2[i];
+        }
             System.out.println();
             System.out.print("Сумма элементов массива равна: " + sum);
         }
-    }
     public static void print(String massage, int number) {
         System.out.println();
         System.out.print("Ваше сообщение - " + massage + " Ваше число - " + number);
