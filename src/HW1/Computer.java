@@ -1,4 +1,7 @@
 package HW1;
+
+import java.util.Objects;
+
 /*1) Создать класс Computer c конструктором принимающим параметры
         Марка тип String, цена тип int, оперативная память тип int,
         и видеокарта тип int.
@@ -20,10 +23,10 @@ package HW1;
         В отдельном классе создайте объект класса компьютер, и выведите в консоль
         информацию о вашем объекте.*/
 public class Computer {
-        public String brand;
-        public int cost;
-        public int RAM;
-        public int videoCard;
+    private String brand;
+    private int cost;
+    private int RAM;
+    private int videoCard;
 
     public Computer(String brand, int cost, int RAM, int videoCard) {
         this.brand = brand;
@@ -31,5 +34,61 @@ public class Computer {
         this.RAM = RAM;
         this.videoCard = videoCard;
     }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public int getCost() {
+        return cost;
+    }
+
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
+
+    public int getRAM() {
+        return RAM;
+    }
+
+    public void setRAM(int RAM) {
+        this.RAM = RAM;
+    }
+
+    public int getVideoCard() {
+        return videoCard;
+    }
+
+    public void setVideoCard(int videoCard) {
+        this.videoCard = videoCard;
+    }
+
+    @Override
+    public String toString(){
+        return "Создан РС." + "\n" + "Имя=" + brand + ". " + "\n"+
+                "Цена=" + cost + "." + "\n" + "Видео карта=" + videoCard + "." +"\n" + "ОЗУ=" + RAM + ".";
+    }
+ /*   @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Computer computer = (Computer) o;
+        return Objects.equals(brand, computer.brand) && Objects.equals(RAM, computer.RAM)
+                && Objects.equals(videoCard, computer.videoCard);
+    }*/
+    /*@Override
+    public int hashCode() {
+        return Objects.hash(brand, RAM, videoCard);
+    }*/
 }
+
+
+
+
+
+
 
