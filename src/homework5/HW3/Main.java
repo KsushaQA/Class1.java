@@ -13,7 +13,7 @@ public class Main {
         //int v = converter.convertToInt(100b);
         int d = converter.convertToInt(100000000l);
         //int e = converter.convertToInt(10s);
-        int w = converter.convertToInt("byte");
+        int w = converter.convertToInt("5");
         System.out.println(x);
         System.out.println(a);
         System.out.println(b);
@@ -23,6 +23,7 @@ public class Main {
         System.out.println(d);
         //System.out.println(e);
         System.out.println(w);
+        System.out.println();
         double x1 = converter.convertToDouble('f');
         double a1 = converter.convertToDouble(false);
         double b1 = converter.convertToDouble(5);
@@ -31,7 +32,7 @@ public class Main {
         //double v1 = converter.convertToDouble(100b);
         double d1 = converter.convertToDouble(100000000l);
         //double e1 = converter.convertToDouble(10s);
-        double w1 = converter.convertToDouble("byte");
+        double w1 = converter.convertToDouble("5");
         System.out.println(x1);
         System.out.println(a1);
         System.out.println(b1);
@@ -41,6 +42,7 @@ public class Main {
         System.out.println(d1);
         //System.out.println(e1);
         System.out.println(w1);
+        System.out.println();
         String x2 = converter.convertToString('f');
         String a2 = converter.convertToString(false);
         String b2 = converter.convertToString(5);
@@ -49,7 +51,7 @@ public class Main {
         //String v2 = converter.convertToString(100b);
         String d2 = converter.convertToString(100000000l);
         //String e2 = converter.convertToString(10s);
-        String w2 = converter.convertToString("byte");
+        String w2 = converter.convertToString("5");
         System.out.println(x2);
         System.out.println(a2);
         System.out.println(b2);
