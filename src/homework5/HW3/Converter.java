@@ -65,7 +65,7 @@ public class Converter {
     public double convertToDouble(String s){
         return Double.parseDouble(s);
     }
-    public int convertToDouble(boolean b){
+    public double convertToDouble(boolean b){
         System.out.println("введен тип boolean");
         return 0;
     }
