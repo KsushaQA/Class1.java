@@ -72,18 +72,19 @@ public class Computer {
         return "Создан РС." + "\n" + "Имя=" + brand + ". " + "\n"+
                 "Цена=" + cost + "." + "\n" + "Видео карта=" + videoCard + "." +"\n" + "ОЗУ=" + RAM + ".";
     }
- /*   @Override
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Computer computer = (Computer) o;
-        return Objects.equals(brand, computer.brand) && Objects.equals(RAM, computer.RAM)
-                && Objects.equals(videoCard, computer.videoCard);
-    }*/
-    /*@Override
+        return RAM == computer.RAM && videoCard == computer.videoCard && Objects.equals(brand, computer.brand);
+    }
+
+    @Override
     public int hashCode() {
         return Objects.hash(brand, RAM, videoCard);
-    }*/
+    }
 }
 
 
