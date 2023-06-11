@@ -41,29 +41,29 @@ public class Converter {
         System.out.println("введен тип boolean");
         return 0;
     }
-    public int convertToDouble(byte b){
-        return b;
+    public double convertToDouble(byte b){
+        return (double) b;
     }
-    public int convertToDouble(short s){
-        return s;
+    public double convertToDouble(short s){
+        return (double) s;
     }
-    public int convertToDouble(int i){
-        return i;
+    public double convertToDouble(int i){
+        return (double) i;
     }
-    public int convertToDouble(long l){
-        return (int) l;
+    public double convertToDouble(long l){
+        return (double) l;
     }
-    public int convertToDouble(char c){
-        return c;
+    public double convertToDouble(char c){
+        return (double) c;
     }
-    public int convertToDouble(float f){
-        return (int) f;
+    public double convertToDouble(float f){
+        return (double) f;
     }
-    public int convertToDouble(double d){
-        return (int) d;
+    public double convertToDouble(double d){
+        return d;
     }
-    public int convertToDouble(String s){
-        return Integer.parseInt(s);
+    public double convertToDouble(String s){
+        return Double.parseDouble(s);
     }
     public int convertToDouble(boolean b){
         System.out.println("введен тип boolean");
