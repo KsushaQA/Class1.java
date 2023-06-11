@@ -69,32 +69,32 @@ public class Converter {
         System.out.println("введен тип boolean");
         return 0;
     }
-    public int convertToString(byte b){
-        return b;
+    public String convertToString(byte b){
+        return String.valueOf(b);
     }
-    public int convertToString(short s){
+    public String convertToString(short s){
+        return String.valueOf(s);
+    }
+    public String convertToString(int i){
+        return String.valueOf(i);
+    }
+    public String convertToString(long l){
+        return String.valueOf(l);
+    }
+    public String convertToString(char c){
+        return String.valueOf(c);
+    }
+    public String convertToString(boolean b){
+        return String.valueOf(b);
+    }
+    public String convertToString(float f){
+        return String.valueOf(f);
+    }
+    public String convertToString(double d){
+        return String.valueOf(d);
+    }
+    public String convertToString(String s){
         return s;
-    }
-    public int convertToString(int i){
-        return i;
-    }
-    public int convertToString(long l){
-        return (int) l;
-    }
-    public int convertToString(char c){
-        return c;
-    }
-    public int convertToString(boolean b){
-        return 0;
-    }
-    public int convertToString(float f){
-        return (int) f;
-    }
-    public int convertToString(double d){
-        return (int) d;
-    }
-    public int convertToString(String s){
-        return Integer.parseInt(s);
     }
 }
 
