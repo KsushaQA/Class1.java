@@ -6,27 +6,20 @@ public class HW1 {
     public static void main(String[] args) {
         int[] nums = {4,9,20,13,60,45,10,24,55};
         Numbers numbers = new Numbers(nums);
-        numbers.printEvenNumbers();
-        numbers.printOddNumbers();
+        numbers.printEvenOddNumbers();
     }
-
     public static class Numbers {
         private int[] array;
-
         public Numbers(int[] array) {
             this.array = array;
         }
-
-        public void printEvenNumbers() {
+        public void printEvenOddNumbers() {
             System.out.println("Even Numbers:");
             for (int i = 0; i < array.length; i++) {
                 if (array[i] % 2 == 0) {
                     System.out.println(array[i] + " ");
                 }
             }
-        }
-
-        public void printOddNumbers() {
             System.out.println("Odd Numbers:");
             for (int i = 0; i < array.length; i++) {
                 if (array[i] % 2 != 0) {
