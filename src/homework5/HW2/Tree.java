@@ -21,26 +21,26 @@ package homework5.HW2;
 public class Tree {
     String type;
     int height;
-    int coutOfsticks;
+    int countOfsticks;
     String colour;
 
     public Tree(String type, int height) {
         this.type = type;
         this.height = height;
-        this.coutOfsticks = 13;
+        this.countOfsticks = 13;
         this.colour = "Зеленый";
     }
 
-    public Tree(int height, int coutOfsticks, String colour) {
+    public Tree(int height, int countOfsticks, String colour) {
         this.type = "пихта";
         this.height = height;
-        this.coutOfsticks = coutOfsticks;
+        this.countOfsticks = countOfsticks;
         this.colour = colour;
     }
 
     public Tree() {
         this.height = 350;
-        this.coutOfsticks = 29;
+        this.countOfsticks = 29;
         this.colour = "желтый";
     }
 
