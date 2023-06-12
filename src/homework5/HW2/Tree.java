@@ -24,10 +24,28 @@ public class Tree {
     int coutOfsticks;
     String colour;
 
-    public Tree(String type, int height, int coutOfsticks, String colour) {
+    public Tree(String type, int height) {
         this.type = type;
         this.height = height;
         this.coutOfsticks = 13;
         this.colour = "Зеленый";
+    }
+
+    public Tree(int height, int coutOfsticks, String colour) {
+        this.type = "пихта";
+        this.height = height;
+        this.coutOfsticks = coutOfsticks;
+        this.colour = colour;
+    }
+
+    public Tree() {
+        this.height = 350;
+        this.coutOfsticks = 29;
+        this.colour = "желтый";
+    }
+
+    public Tree(String type) {
+        this();
+        this.type = type;
     }
 }
