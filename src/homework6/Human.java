@@ -90,4 +90,11 @@ public class Human {
     public void setFather(Human father) {
         this.father = father;
     }
+    public void greetPet() {
+        System.out.println("Привіт, " + pet.getNickname());
+    }
+    public void describePet() {
+        String trickLevel = pet.getTrickLevel() > 50 ? "дуже хитрий" : "майже не хитрий";
+        System.out.println("У мене є " + pet.getSpecies() + ", їй " + pet.getAge() + " років, він " + trickLevel);
+    }
 }
