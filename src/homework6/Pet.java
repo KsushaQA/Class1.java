@@ -4,7 +4,7 @@ public class Pet {
     private String species;
     private String nickname;
     private int age;
-    private int[] trickLevel;
+    private int trickLevel;
     private String[] habits;
 
     public Pet(String species, String nickname) {
@@ -12,7 +12,7 @@ public class Pet {
         this.nickname = nickname;
     }
 
-    public Pet(String species, String nickname, int age, int[] trickLevel, String[] habits) {
+    public Pet(String species, String nickname, int age, int trickLevel, String[] habits) {
         this.species = species;
         this.nickname = nickname;
         this.age = age;
@@ -47,11 +47,11 @@ public class Pet {
         this.age = age;
     }
 
-    public int[] getTrickLevel() {
+    public int getTrickLevel() {
         return trickLevel;
     }
 
-    public void setTrickLevel(int[] trickLevel) {
+    public void setTrickLevel(int trickLevel) {
         this.trickLevel = trickLevel;
     }
 
