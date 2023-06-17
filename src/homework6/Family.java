@@ -4,11 +4,17 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Family {
+        private Family family;
         private Human mother;
         private Human father;
         private Human[] children;
         private Pet pet;
-
+    public Family getFamily() {
+        return family;
+    }
+    public void setFamily(Family family) {
+        this.family = family;
+    }
     public Human getMother() {
         return mother;
     }
@@ -41,9 +47,14 @@ public class Family {
         this.pet = pet;
     }
 
+    public Family(Family family) {
+        this.family = family;
+    }
+
     public Family(Human mother, Human father) {
         this.mother = mother;
         this.father = father;
+        this.children = new Human[0];
     }
 
     @Override
