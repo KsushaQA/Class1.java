@@ -1,5 +1,7 @@
 package homework6;
 
+import java.util.Objects;
+
 public class Human {
     private String name;
     private String surname;
@@ -110,6 +112,17 @@ public class Human {
                 ", father=" + father +
                 '}';
     }
-
-
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Human human = (Human) o;
+        return year == human.year && iq == human.iq && Objects.equals(name, human.name)
+                && Objects.equals(surname, human.surname) && Objects.equals(pet, human.pet)
+                && Objects.equals(mother, human.mother) && Objects.equals(father, human.father);
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, surname, year, iq, pet, mother, father);
+    }
 }
