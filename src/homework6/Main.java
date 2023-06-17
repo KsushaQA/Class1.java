@@ -8,6 +8,12 @@ public class Main {
         Human human = new Human("Michael", "Karleone", 1977,90, pet, mather, father);
         System.out.println(pet.toString());
         System.out.println(human.toString());
+        pet.respond();
+        pet.eat();
+        pet.foul();
+        human.greetPet();
+        human.describePet();
+
     }
 
 }
