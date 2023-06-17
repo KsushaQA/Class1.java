@@ -107,9 +107,9 @@ public class Human {
                 ", surname='" + surname + '\'' +
                 ", year=" + year +
                 ", iq=" + iq +
-                ", pet=" + pet +
-                ", mother=" + mother +
-                ", father=" + father +
+                ", mother=" + mother.getName() + " " + mother.getSurname() +
+                ", father=" + father.getName() + " " + father.getSurname() +
+                ", pet=" + pet.toString() +
                 '}';
     }
     @Override
@@ -125,4 +125,5 @@ public class Human {
     public int hashCode() {
         return Objects.hash(name, surname, year, iq, pet, mother, father);
     }
+
 }
