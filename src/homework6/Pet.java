@@ -1,5 +1,7 @@
 package homework6;
 
+import java.util.Arrays;
+
 public class Pet {
     private String species;
     private String nickname;
@@ -71,5 +73,16 @@ public class Pet {
     }
     public void foul() {
         System.out.println("Потрібно добре замести сліди...");
+    }
+
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "species='" + species + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", age=" + age +
+                ", trickLevel=" + trickLevel +
+                ", habits=" + Arrays.toString(habits) +
+                '}';
     }
 }

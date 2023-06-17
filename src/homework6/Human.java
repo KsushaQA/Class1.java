@@ -97,4 +97,19 @@ public class Human {
         String trickLevel = pet.getTrickLevel() > 50 ? "дуже хитрий" : "майже не хитрий";
         System.out.println("У мене є " + pet.getSpecies() + ", їй " + pet.getAge() + " років, він " + trickLevel);
     }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", year=" + year +
+                ", iq=" + iq +
+                ", pet=" + pet +
+                ", mother=" + mother +
+                ", father=" + father +
+                '}';
+    }
+
+
 }
