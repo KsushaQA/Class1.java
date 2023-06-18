@@ -76,7 +76,6 @@ public class Family {
     public int countFamily() {
         return 2 + children.length;
     }
-
     public void addChild(Human newChild) {
         newChild.setFamily(this);
         Human[] newArray = new Human[children.length + 1];

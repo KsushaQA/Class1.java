@@ -9,10 +9,10 @@ public class Main {
         Human child2 = new Human("Michael", "Karleone", 1977);
         Human child3 = new Human("Michael", "Karleone", 1977);
         Human human = new Human("Michael", "Karleone", 1977,90, pet, mather, father);
+        Family family1 = new Family(mather, father);
         System.out.println(mather.getName());
         System.out.println(father.getName());
         System.out.println(child1.getName());
-        Family family1 = new Family(mather, father);
         System.out.println(family1.countFamily());
         family1.addChild(child1);
         family1.addChild(child2);
@@ -27,5 +27,6 @@ public class Main {
         pet.foul();
         human.greetPet();
         human.describePet();
+
     }
 }
