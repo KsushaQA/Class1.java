@@ -20,6 +20,8 @@ public class Main {
         System.out.println(family1.countFamily());
         family1.deleteChild(1);
         System.out.println(family1.countFamily());
+        System.out.println(pet);
+        System.out.println(human);
         pet.respond();
         pet.eat();
         pet.foul();
