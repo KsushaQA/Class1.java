@@ -25,16 +25,25 @@ public class Shop {
             finalCost *= 0.9;
         }
         if (seller.isHonest() || !product.isAlcoholic()) {
+            if (buyer.getAge() >= 18) {
+                System.out.println("Уважаемый " + buyer.getName() +
+                        ", продавец " + seller.getName() +
+                        " нашего магазина " + name + ", продаст Вам выбранный товар " +
+                        product.getName() + ", в нем содержится алкоголь, а Ваш возраст " +
+                        buyer.getAge() + ".\nСтоимость вашей покупки равна " +
+                        finalCost + ", с учетом Вашей скидки.");
+            } else {
+                System.out.println("Продавец " + seller.getName() +
+                        " не может продать вам этот товар " +
+                        product.getName() + ", так как вы несовершеннолетний.");
+            }
+        } else {
             System.out.println("Уважаемый " + buyer.getName() +
                     ", продавец " + seller.getName() +
-                    " нашего магазина "  + name + ", продаст Вам выбранный товар " +
-                    product.getName() + ", в нем содержится алкоголь, а Ваш возраст " +
+                    " нашего магазина " + name + ", продаст Вам выбранный товар " +
+                    product.getName() + ", не смотря на то, что Вы несовершеннолетний, Вам только " +
                     buyer.getAge() + ".\nСтоимость вашей покупки равна " +
                     finalCost + ", с учетом Вашей скидки.");
-        } else {
-            System.out.println("Продавец " + seller.getName() +
-                    " не может продать вам этот товар " +
-                    product.getName() + ", так как вы несовершеннолетний.");
         }
     }
 }
