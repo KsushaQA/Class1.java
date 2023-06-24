@@ -16,7 +16,6 @@ public class Father {
     public int getMoney() {
         return money;
     }
-
     public void makePurchase(Product product1, int quantity1, Product product2, int quantity2) throws Exception {
         int totalCost = product1.getPrice() * quantity1 + product2.getPrice() * quantity2;
 
